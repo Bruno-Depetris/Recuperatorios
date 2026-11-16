@@ -12,6 +12,7 @@ namespace Recuperatorios.Parcial_Integrador {
     public partial class Form_Estadisticas : Form {
         public Form_Estadisticas() {
             InitializeComponent();
+      
         }
     }
 }

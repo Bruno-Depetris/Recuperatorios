@@ -13,5 +13,9 @@ namespace Recuperatorios.Parcial_Integrador {
         public Form_Integrador() {
             InitializeComponent();
         }
+
+        private void lblRecaudacion_Click(object sender, EventArgs e) {
+
+        }
     }
 }
