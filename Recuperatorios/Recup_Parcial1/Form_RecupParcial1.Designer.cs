@@ -41,7 +41,7 @@
             this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colHoras = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ( (System.ComponentModel.ISupportInitialize)( this.dgvVehiculos ) ).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVehiculos)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -50,6 +50,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblTitulo.Location = new System.Drawing.Point(20, 15);
             this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(232, 21);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Estacionamiento (10 lugares)";
             // 
@@ -58,6 +59,7 @@
             this.lblPatente.AutoSize = true;
             this.lblPatente.Location = new System.Drawing.Point(20, 58);
             this.lblPatente.Name = "lblPatente";
+            this.lblPatente.Size = new System.Drawing.Size(47, 13);
             this.lblPatente.TabIndex = 1;
             this.lblPatente.Text = "Patente:";
             // 
@@ -65,7 +67,7 @@
             // 
             this.txtPatente.Location = new System.Drawing.Point(130, 55);
             this.txtPatente.Name = "txtPatente";
-            this.txtPatente.Size = new System.Drawing.Size(180, 23);
+            this.txtPatente.Size = new System.Drawing.Size(180, 20);
             this.txtPatente.TabIndex = 2;
             // 
             // lblMarca
@@ -73,6 +75,7 @@
             this.lblMarca.AutoSize = true;
             this.lblMarca.Location = new System.Drawing.Point(20, 92);
             this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(40, 13);
             this.lblMarca.TabIndex = 3;
             this.lblMarca.Text = "Marca:";
             // 
@@ -80,7 +83,7 @@
             // 
             this.txtMarca.Location = new System.Drawing.Point(130, 89);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(180, 23);
+            this.txtMarca.Size = new System.Drawing.Size(180, 20);
             this.txtMarca.TabIndex = 4;
             // 
             // lblTipo
@@ -88,6 +91,7 @@
             this.lblTipo.AutoSize = true;
             this.lblTipo.Location = new System.Drawing.Point(20, 126);
             this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(31, 13);
             this.lblTipo.TabIndex = 5;
             this.lblTipo.Text = "Tipo:";
             // 
@@ -101,7 +105,7 @@
             "Camioneta"});
             this.cmbTipo.Location = new System.Drawing.Point(130, 123);
             this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(180, 23);
+            this.cmbTipo.Size = new System.Drawing.Size(180, 21);
             this.cmbTipo.TabIndex = 6;
             // 
             // lblHoras
@@ -109,6 +113,7 @@
             this.lblHoras.AutoSize = true;
             this.lblHoras.Location = new System.Drawing.Point(20, 160);
             this.lblHoras.Name = "lblHoras";
+            this.lblHoras.Size = new System.Drawing.Size(77, 13);
             this.lblHoras.TabIndex = 7;
             this.lblHoras.Text = "Horas (1 a 24):";
             // 
@@ -116,7 +121,7 @@
             // 
             this.txtHoras.Location = new System.Drawing.Point(130, 157);
             this.txtHoras.Name = "txtHoras";
-            this.txtHoras.Size = new System.Drawing.Size(80, 23);
+            this.txtHoras.Size = new System.Drawing.Size(80, 20);
             this.txtHoras.TabIndex = 8;
             // 
             // btnIngresar
@@ -127,6 +132,7 @@
             this.btnIngresar.TabIndex = 9;
             this.btnIngresar.Text = "INGRESAR";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // btnTotal
             // 
@@ -150,12 +156,12 @@
             this.colTipo,
             this.colHoras,
             this.colMonto});
+            this.dgvVehiculos.Location = new System.Drawing.Point(20, 240);
             this.dgvVehiculos.MultiSelect = false;
+            this.dgvVehiculos.Name = "dgvVehiculos";
             this.dgvVehiculos.ReadOnly = true;
             this.dgvVehiculos.RowHeadersVisible = false;
             this.dgvVehiculos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvVehiculos.Location = new System.Drawing.Point(20, 240);
-            this.dgvVehiculos.Name = "dgvVehiculos";
             this.dgvVehiculos.Size = new System.Drawing.Size(760, 240);
             this.dgvVehiculos.TabIndex = 11;
             // 
@@ -168,14 +174,12 @@
             // 
             // colPatente
             // 
-            this.colPatente.FillWeight = 100F;
             this.colPatente.HeaderText = "Patente";
             this.colPatente.Name = "colPatente";
             this.colPatente.ReadOnly = true;
             // 
             // colMarca
             // 
-            this.colMarca.FillWeight = 100F;
             this.colMarca.HeaderText = "Marca";
             this.colMarca.Name = "colMarca";
             this.colMarca.ReadOnly = true;
@@ -196,13 +200,13 @@
             // 
             // colMonto
             // 
-            this.colMonto.FillWeight = 100F;
             this.colMonto.HeaderText = "Monto a pagar";
             this.colMonto.Name = "colMonto";
             this.colMonto.ReadOnly = true;
             // 
             // Form_RecupParcial1
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 500);
             this.Controls.Add(this.lblTitulo);
@@ -222,9 +226,11 @@
             this.Name = "Form_RecupParcial1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estacionamiento";
-            ( (System.ComponentModel.ISupportInitialize)( this.dgvVehiculos ) ).EndInit();
+            this.Shown += new System.EventHandler(this.Form_RecupParcial1_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVehiculos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

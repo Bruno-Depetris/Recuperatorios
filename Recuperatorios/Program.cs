@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Recuperatorios.Recup.Parcial1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace Recuperatorios {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Form_RecupParcial2());
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Recuperatorios.Recup_Parcial1;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,5 +15,9 @@ namespace Recuperatorios.Parcial_Integrador {
             InitializeComponent();
       
         }
+        Vehiculo[] lugares = new Vehiculo[10];
+
+
+
     }
 }

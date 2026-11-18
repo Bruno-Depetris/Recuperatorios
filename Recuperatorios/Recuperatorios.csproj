@@ -66,12 +66,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recup_Parcial1\Auto.cs" />
+    <Compile Include="Recup_Parcial1\Camioneta.cs" />
     <Compile Include="Recup_Parcial1\Form_RecupParcial1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Recup_Parcial1\Form_RecupParcial1.Designer.cs">
       <DependentUpon>Form_RecupParcial1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Recup_Parcial1\Moto.cs" />
+    <Compile Include="Recup_Parcial1\Vehiculo.cs" />
+    <Compile Include="Recup_Parcial2\Conexion.cs" />
+    <Compile Include="Recup_Parcial2\Consultas.cs" />
     <Compile Include="Recup_Parcial2\Form_RecupParcial2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,8 @@
     <Compile Include="Recup_Parcial2\Form_Vender.Designer.cs">
       <DependentUpon>Form_Vender.cs</DependentUpon>
     </Compile>
+    <Compile Include="Recup_Parcial2\Perfume.cs" />
+    <Compile Include="Recup_Parcial2\Venta.cs" />
     <EmbeddedResource Include="Parcial_Integrador\Form_Integrador.resx">
       <DependentUpon>Form_Integrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +104,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Recup_Parcial1\Form_RecupParcial1.resx">
+      <DependentUpon>Form_RecupParcial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recup_Parcial2\Form_RecupParcial2.resx">
+      <DependentUpon>Form_RecupParcial2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
